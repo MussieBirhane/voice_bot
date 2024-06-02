@@ -8,7 +8,7 @@ const vapi = new Vapi("7388cbf1-3f35-45c5-abe6-f42a0abb12a9");
 document.getElementById('microphone-btn').addEventListener('click', () => {
     // Start the VAPI session with the persistent assistant's ID
     console.log('Microphone button clicked');  // Test log
-    vapi.start("78a85399-9fcb-4dd3-8007-633a7f26da6d");   // 78a85399-9fcb-4dd3-8007-633a7f26da6d Cargo Trans
+    vapi.start("9b225f0f-ad17-4977-b59a-cf341aba48fa");   // 78a85399-9fcb-4dd3-8007-633a7f26da6d Cargo Trans
 
     // You can add event listeners if needed
     vapi.on('audioStart', () => console.log('Audio recording started'));
