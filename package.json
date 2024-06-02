@@ -1,11 +1,13 @@
 {
   "dependencies": {
-    "@vapi-ai/web": "^1.1.7"
+    "@vapi-ai/web": "^1.1.7",
+    "parcel-bundler": "^1.12.5"
   },
   "name": "voice_bot",
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
+    "prebuild": "npm install -g parcel-bundler",
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
