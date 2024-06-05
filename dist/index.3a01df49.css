@@ -1,0 +1,29 @@
+body, html {
+  background-color: #f0f0f0;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+.container {
+  text-align: center;
+}
+
+#microphone-btn {
+  cursor: pointer;
+  background: #007bff url("microphone-icon.6645490a.png");
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+#microphone-btn img {
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=index.3a01df49.css.map */

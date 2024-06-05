@@ -14,7 +14,7 @@ body, html {
 
 #microphone-btn {
     background: #007bff;
-    background-image: url('./microphone-icon.png');
+    background-image: url('microphone-icon.png');
     border: none;
     border-radius: 50%;
     padding: 10px;
