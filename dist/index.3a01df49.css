@@ -12,17 +12,18 @@ body, html {
   text-align: center;
 }
 
-#microphone-btn {
+#microphone-btn, #hangup-btn {
   cursor: pointer;
-  background: #007bff url("microphone-icon.6645490a.png");
+  background: #007bff;
   border: none;
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  margin: 5px;
   padding: 10px;
 }
 
-#microphone-btn img {
+#microphone-btn img, #hangup-btn img {
   width: 100%;
   height: auto;
 }

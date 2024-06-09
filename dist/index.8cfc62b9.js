@@ -595,11 +595,20 @@ document.getElementById("microphone-btn").addEventListener("click", ()=>{
     // Start the VAPI session with the persistent assistant's ID
     console.log("Microphone button clicked"); // Test log
     vapi.start("78a85399-9fcb-4dd3-8007-633a7f26da6d"); // 78a85399-9fcb-4dd3-8007-633a7f26da6d Cargo Trans
-    // You can add event listeners if needed
-    vapi.on("audioStart", ()=>console.log("Audio recording started"));
-    vapi.on("audioEnd", ()=>console.log("Audio recording ended"));
-    vapi.on("response", (response)=>console.log("Assistant response:", response));
+    // New lines
+    document.getElementById("microphone-btn").style.display = "none";
+    document.getElementById("hangup-btn").style.display = "inline";
 });
+document.getElementById("hangup-btn").addEventListener("click", ()=>{
+    console.log("Hangup button clicked");
+    vapi.stop();
+    document.getElementById("microphone-btn").style.display = "inline";
+    document.getElementById("hangup-btn").style.display = "none";
+});
+// You can add event listeners if needed
+vapi.on("audioStart", ()=>console.log("Audio recording started"));
+vapi.on("audioEnd", ()=>console.log("Audio recording ended"));
+vapi.on("response", (response)=>console.log("Assistant response:", response));
 
 },{"@vapi-ai/web":"9YU7O","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9YU7O":[function(require,module,exports) {
 "use strict";
