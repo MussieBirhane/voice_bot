@@ -1,0 +1,229 @@
+2024-06-08 20:22:27,422 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-08 20:22:27,422 INFO:[33mPress CTRL+C to quit[0m
+2024-06-08 20:22:27,425 INFO: * Restarting with stat
+2024-06-08 20:22:28,576 WARNING: * Debugger is active!
+2024-06-08 20:22:28,576 INFO: * Debugger PIN: 795-300-598
+2024-06-08 20:23:20,605 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-08 20:23:20,606 INFO:[33mPress CTRL+C to quit[0m
+2024-06-08 20:23:20,607 INFO: * Restarting with stat
+2024-06-08 20:23:21,820 WARNING: * Debugger is active!
+2024-06-08 20:23:21,822 INFO: * Debugger PIN: 795-300-598
+2024-06-08 20:23:42,575 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\custom_llm.py', reloading
+2024-06-08 20:23:42,654 INFO: * Restarting with stat
+2024-06-08 20:23:43,703 WARNING: * Debugger is active!
+2024-06-08 20:23:43,719 INFO: * Debugger PIN: 795-300-598
+2024-06-08 20:24:14,137 INFO:Request data: {'messages': [{'role': 'user', 'content': 'Hello, what is the capital of Italy?'}], 'model': 'gpt-3.5-turbo', 'stream': False}
+2024-06-08 20:24:15,440 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-08 20:24:15,440 INFO:Response data: ChatCompletion(id='chatcmpl-9Xv1Xa4fvdxyNzx2Hsu0URGvJckg9', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='The capital of Italy is Rome.', role='assistant', function_call=None, tool_calls=None))], created=1717871051, model='gpt-3.5-turbo-0125', object='chat.completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=7, prompt_tokens=16, total_tokens=23))
+2024-06-08 20:24:15,455 INFO:127.0.0.1 - - [08/Jun/2024 20:24:15] "POST /openai-sse/chat/completions HTTP/1.1" 200 -
+2024-06-08 20:26:44,372 INFO:127.0.0.1 - - [08/Jun/2024 20:26:44] "[33mPOST /chat/completions HTTP/1.1[0m" 404 -
+2024-06-08 20:28:24,215 INFO:127.0.0.1 - - [08/Jun/2024 20:28:24] "[33mPOST /chat/completions HTTP/1.1[0m" 404 -
+2024-06-08 20:35:04,096 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-08 20:35:04,096 INFO:[33mPress CTRL+C to quit[0m
+2024-06-08 20:35:04,102 INFO: * Restarting with stat
+2024-06-08 20:35:05,206 WARNING: * Debugger is active!
+2024-06-08 20:35:05,208 INFO: * Debugger PIN: 795-300-598
+2024-06-08 20:35:48,815 INFO:127.0.0.1 - - [08/Jun/2024 20:35:48] "[33mGET / HTTP/1.1[0m" 404 -
+2024-06-08 20:35:49,089 INFO:127.0.0.1 - - [08/Jun/2024 20:35:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-06-08 20:36:34,367 INFO:Request data: {'model': 'gpt-3.5-turbo-0125', 'messages': [{'role': 'system', 'content': 'Ava is a sophisticated AI training assistant, tries to answer user questions.'}, {'role': 'assistant', 'content': 'Hello. This is Iv. How may I assist you today?'}, {'role': 'user', 'content': 'Hello.'}], 'temperature': 0.7, 'stream': True, 'max_tokens': 250, 'call': {'id': 'e84c7d64-d8b8-451e-b9a3-62b268b761bf', 'orgId': '84d8c226-08af-4856-b6ed-7c467df319e6', 'createdAt': '2024-06-08T18:36:17.471Z', 'updatedAt': '2024-06-08T18:36:17.471Z', 'type': 'webCall', 'status': 'queued', 'assistantId': '9b225f0f-ad17-4977-b59a-cf341aba48fa', 'webCallUrl': 'https://vapi.daily.co/KGl4NwfwcolisMaImyT6'}, 'metadata': {}}
+2024-06-08 20:36:34,367 INFO:127.0.0.1 - - [08/Jun/2024 20:36:34] "[35m[1mPOST /chat/completions HTTP/1.1[0m" 500 -
+2024-06-08 20:36:35,305 INFO:Request data: {'model': 'gpt-3.5-turbo-0125', 'messages': [{'role': 'system', 'content': 'Ava is a sophisticated AI training assistant, tries to answer user questions.'}, {'role': 'assistant', 'content': 'Hello. This is Iv. How may I assist you today?'}, {'role': 'user', 'content': 'Hello.'}], 'temperature': 0.7, 'stream': True, 'max_tokens': 250, 'call': {'id': 'e84c7d64-d8b8-451e-b9a3-62b268b761bf', 'orgId': '84d8c226-08af-4856-b6ed-7c467df319e6', 'createdAt': '2024-06-08T18:36:17.471Z', 'updatedAt': '2024-06-08T18:36:17.471Z', 'type': 'webCall', 'status': 'queued', 'assistantId': '9b225f0f-ad17-4977-b59a-cf341aba48fa', 'webCallUrl': 'https://vapi.daily.co/KGl4NwfwcolisMaImyT6'}, 'metadata': {}}
+2024-06-08 20:36:35,306 INFO:127.0.0.1 - - [08/Jun/2024 20:36:35] "[35m[1mPOST /chat/completions HTTP/1.1[0m" 500 -
+2024-06-08 20:36:36,277 INFO:Request data: {'model': 'gpt-3.5-turbo-0125', 'messages': [{'role': 'system', 'content': 'Ava is a sophisticated AI training assistant, tries to answer user questions.'}, {'role': 'assistant', 'content': 'Hello. This is Iv. How may I assist you today?'}, {'role': 'user', 'content': 'Hello, Eva. Was the capital Sid of Italy?'}], 'temperature': 0.7, 'stream': True, 'max_tokens': 250, 'call': {'id': 'e84c7d64-d8b8-451e-b9a3-62b268b761bf', 'orgId': '84d8c226-08af-4856-b6ed-7c467df319e6', 'createdAt': '2024-06-08T18:36:17.471Z', 'updatedAt': '2024-06-08T18:36:17.471Z', 'type': 'webCall', 'status': 'queued', 'assistantId': '9b225f0f-ad17-4977-b59a-cf341aba48fa', 'webCallUrl': 'https://vapi.daily.co/KGl4NwfwcolisMaImyT6'}, 'metadata': {}}
+2024-06-08 20:36:36,277 INFO:127.0.0.1 - - [08/Jun/2024 20:36:36] "[35m[1mPOST /chat/completions HTTP/1.1[0m" 500 -
+2024-06-08 20:36:37,077 INFO:Request data: {'model': 'gpt-3.5-turbo-0125', 'messages': [{'role': 'system', 'content': 'Ava is a sophisticated AI training assistant, tries to answer user questions.'}, {'role': 'assistant', 'content': 'Hello. This is Iv. How may I assist you today?'}, {'role': 'user', 'content': 'Hello, Eva. Was the capital Sid of Italy?'}], 'temperature': 0.7, 'stream': True, 'max_tokens': 250, 'call': {'id': 'e84c7d64-d8b8-451e-b9a3-62b268b761bf', 'orgId': '84d8c226-08af-4856-b6ed-7c467df319e6', 'createdAt': '2024-06-08T18:36:17.471Z', 'updatedAt': '2024-06-08T18:36:17.471Z', 'type': 'webCall', 'status': 'queued', 'assistantId': '9b225f0f-ad17-4977-b59a-cf341aba48fa', 'webCallUrl': 'https://vapi.daily.co/KGl4NwfwcolisMaImyT6'}, 'metadata': {}}
+2024-06-08 20:36:37,077 INFO:127.0.0.1 - - [08/Jun/2024 20:36:37] "[35m[1mPOST /chat/completions HTTP/1.1[0m" 500 -
+2024-06-08 20:36:38,269 INFO:Request data: {'model': 'gpt-3.5-turbo-0125', 'messages': [{'role': 'system', 'content': 'Ava is a sophisticated AI training assistant, tries to answer user questions.'}, {'role': 'assistant', 'content': 'Hello. This is Iv. How may I assist you today?'}, {'role': 'user', 'content': 'Hello, Eva. Was the capital Sid of Italy?'}], 'temperature': 0.7, 'stream': True, 'max_tokens': 250, 'call': {'id': 'e84c7d64-d8b8-451e-b9a3-62b268b761bf', 'orgId': '84d8c226-08af-4856-b6ed-7c467df319e6', 'createdAt': '2024-06-08T18:36:17.471Z', 'updatedAt': '2024-06-08T18:36:17.471Z', 'type': 'webCall', 'status': 'queued', 'assistantId': '9b225f0f-ad17-4977-b59a-cf341aba48fa', 'webCallUrl': 'https://vapi.daily.co/KGl4NwfwcolisMaImyT6'}, 'metadata': {}}
+2024-06-08 20:36:38,270 INFO:127.0.0.1 - - [08/Jun/2024 20:36:38] "[35m[1mPOST /chat/completions HTTP/1.1[0m" 500 -
+2024-06-08 21:18:24,841 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\test_request_II.py', reloading
+2024-06-08 21:18:24,915 INFO: * Restarting with stat
+2024-06-08 21:18:26,041 WARNING: * Debugger is active!
+2024-06-08 21:18:26,041 INFO: * Debugger PIN: 795-300-598
+2024-06-08 21:19:05,562 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\test_request.py', reloading
+2024-06-08 21:19:05,689 INFO: * Restarting with stat
+2024-06-08 21:19:06,774 WARNING: * Debugger is active!
+2024-06-08 21:19:06,774 INFO: * Debugger PIN: 795-300-598
+2024-06-08 21:25:03,419 INFO:Request data: {'messages': [{'role': 'user', 'content': 'Hello, what is the capital city of Ethiopia?'}], 'stream': False}
+2024-06-08 21:25:03,419 INFO:127.0.0.1 - - [08/Jun/2024 21:25:03] "[31m[1mPOST /chat/completions HTTP/1.1[0m" 400 -
+2024-06-08 21:26:29,030 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\test_app-client.py', reloading
+2024-06-08 21:26:29,108 INFO: * Restarting with stat
+2024-06-08 21:26:30,280 WARNING: * Debugger is active!
+2024-06-08 21:26:30,280 INFO: * Debugger PIN: 795-300-598
+2024-06-08 21:26:41,098 INFO:Request data: {'messages': [{'role': 'user', 'content': 'Hello, what is the capital city of Ethiopia?'}], 'model': 'gpt-3.5-turbo-0125', 'stream': False}
+2024-06-08 21:26:42,490 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-08 21:26:42,490 INFO:Response data: ChatCompletion(id='chatcmpl-9XvzyBzNCKuhj0pOvGrYRSHMTTu39', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='The capital city of Ethiopia is Addis Ababa.', role='assistant', function_call=None, tool_calls=None))], created=1717874798, model='gpt-3.5-turbo-0125', object='chat.completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=11, prompt_tokens=17, total_tokens=28))
+2024-06-08 21:26:42,490 INFO:127.0.0.1 - - [08/Jun/2024 21:26:42] "[35m[1mPOST /chat/completions HTTP/1.1[0m" 500 -
+2024-06-08 21:31:13,016 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\app-client.py', reloading
+2024-06-08 21:31:13,091 INFO: * Restarting with stat
+2024-06-08 21:31:14,315 WARNING: * Debugger is active!
+2024-06-08 21:31:14,315 INFO: * Debugger PIN: 795-300-598
+2024-06-08 21:31:18,965 INFO:Request data: {'messages': [{'role': 'user', 'content': 'Hello, what is the capital city of Ethiopia?'}], 'model': 'gpt-3.5-turbo-0125', 'stream': False}
+2024-06-08 21:31:20,374 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-08 21:31:20,384 INFO:Response data: ChatCompletion(id='chatcmpl-9Xw4SRezFL9Q9KeYOOEPxo6XjOmGB', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='The capital city of Ethiopia is Addis Ababa.', role='assistant', function_call=None, tool_calls=None))], created=1717875076, model='gpt-3.5-turbo-0125', object='chat.completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=11, prompt_tokens=17, total_tokens=28))
+2024-06-08 21:31:20,390 INFO:127.0.0.1 - - [08/Jun/2024 21:31:20] "POST /chat/completions HTTP/1.1" 200 -
+2024-06-08 21:32:06,190 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\test_custom_llm_full.py', reloading
+2024-06-08 21:32:06,265 INFO: * Restarting with stat
+2024-06-08 21:32:07,432 WARNING: * Debugger is active!
+2024-06-08 21:32:07,432 INFO: * Debugger PIN: 795-300-598
+2024-06-08 21:42:21,852 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\app_II.py', reloading
+2024-06-08 21:42:21,932 INFO: * Restarting with stat
+2024-06-08 21:42:23,170 WARNING: * Debugger is active!
+2024-06-08 21:42:23,170 INFO: * Debugger PIN: 795-300-598
+2024-06-08 21:42:54,345 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\app_II.py', reloading
+2024-06-08 21:42:54,437 INFO: * Restarting with stat
+2024-06-08 21:42:55,730 WARNING: * Debugger is active!
+2024-06-08 21:42:55,730 INFO: * Debugger PIN: 795-300-598
+2024-06-08 21:43:19,467 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-08 21:43:19,467 INFO:[33mPress CTRL+C to quit[0m
+2024-06-08 21:43:19,468 INFO: * Restarting with stat
+2024-06-08 21:43:20,214 WARNING: * Debugger is active!
+2024-06-08 21:43:20,214 INFO: * Debugger PIN: 795-300-598
+2024-06-08 21:43:40,585 INFO:127.0.0.1 - - [08/Jun/2024 21:43:40] "POST /chat/completions HTTP/1.1" 200 -
+2024-06-08 21:45:06,007 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\test_custom_llm.py', reloading
+2024-06-08 21:45:06,090 INFO: * Restarting with stat
+2024-06-08 21:45:06,939 WARNING: * Debugger is active!
+2024-06-08 21:45:06,942 INFO: * Debugger PIN: 795-300-598
+2024-06-08 21:45:17,417 INFO:127.0.0.1 - - [08/Jun/2024 21:45:17] "POST /chat/completions HTTP/1.1" 200 -
+2024-06-08 21:45:36,009 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\app-client.py', reloading
+2024-06-08 21:45:36,106 INFO: * Restarting with stat
+2024-06-08 21:45:37,035 WARNING: * Debugger is active!
+2024-06-08 21:45:37,037 INFO: * Debugger PIN: 795-300-598
+2024-06-08 21:45:54,786 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\app_II.py', reloading
+2024-06-08 21:45:54,862 INFO: * Restarting with stat
+2024-06-08 21:45:55,895 WARNING: * Debugger is active!
+2024-06-08 21:45:55,897 INFO: * Debugger PIN: 795-300-598
+2024-06-08 21:45:59,776 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-08 21:45:59,778 INFO:Response data: ChatCompletion(id='chatcmpl-9XwIdaWCpjQHESYTBX5WajSmPIOdM', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='The capital of Italy is Rome.', role='assistant', function_call=None, tool_calls=None))], created=1717875955, model='gpt-3.5-turbo-0125', object='chat.completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=7, prompt_tokens=16, total_tokens=23))
+2024-06-08 21:45:59,784 INFO:127.0.0.1 - - [08/Jun/2024 21:45:59] "POST /chat/completions HTTP/1.1" 200 -
+2024-06-08 21:48:47,222 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\test_custom_llm.py', reloading
+2024-06-08 21:48:47,317 INFO: * Restarting with stat
+2024-06-08 21:48:48,414 WARNING: * Debugger is active!
+2024-06-08 21:48:48,417 INFO: * Debugger PIN: 795-300-598
+2024-06-08 21:48:55,752 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\test_custom_llm.py', reloading
+2024-06-08 21:48:55,830 INFO: * Restarting with stat
+2024-06-08 21:48:56,665 WARNING: * Debugger is active!
+2024-06-08 21:48:56,669 INFO: * Debugger PIN: 795-300-598
+2024-06-08 21:49:06,656 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-08 21:49:06,659 INFO:Response data: ChatCompletion(id='chatcmpl-9XwLeqEO8cdWYYstkAxFujqyF2LVi', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='The capital of Ethiopia is Addis Ababa.', role='assistant', function_call=None, tool_calls=None))], created=1717876142, model='gpt-3.5-turbo-0125', object='chat.completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=10, prompt_tokens=16, total_tokens=26))
+2024-06-08 21:49:06,667 INFO:127.0.0.1 - - [08/Jun/2024 21:49:06] "POST /chat/completions HTTP/1.1" 200 -
+2024-06-08 21:56:14,897 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\app_II.py', reloading
+2024-06-08 21:56:14,980 INFO: * Restarting with stat
+2024-06-08 21:56:15,813 WARNING: * Debugger is active!
+2024-06-08 21:56:15,813 INFO: * Debugger PIN: 795-300-598
+2024-06-08 21:56:20,396 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-08 21:56:20,412 INFO:Response data: ChatCompletion(id='chatcmpl-9XwSeSHF3odqyddq5ektCiFS1rvwO', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='The capital of Ethiopia is Addis Ababa.', role='assistant', function_call=None, tool_calls=None))], created=1717876576, model='gpt-3.5-turbo-0125', object='chat.completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=10, prompt_tokens=16, total_tokens=26))
+2024-06-08 21:56:20,427 INFO:127.0.0.1 - - [08/Jun/2024 21:56:20] "POST /chat/completions HTTP/1.1" 200 -
+2024-06-08 21:57:42,868 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\app_II.py', reloading
+2024-06-08 21:57:42,949 INFO: * Restarting with stat
+2024-06-08 21:57:43,765 WARNING: * Debugger is active!
+2024-06-08 21:57:43,781 INFO: * Debugger PIN: 795-300-598
+2024-06-08 21:57:56,288 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\app_II.py', reloading
+2024-06-08 21:57:56,366 INFO: * Restarting with stat
+2024-06-08 21:57:57,100 WARNING: * Debugger is active!
+2024-06-08 21:57:57,100 INFO: * Debugger PIN: 795-300-598
+2024-06-08 21:58:43,772 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\app_II.py', reloading
+2024-06-08 21:58:43,840 INFO: * Restarting with stat
+2024-06-08 21:58:44,669 WARNING: * Debugger is active!
+2024-06-08 21:58:44,671 INFO: * Debugger PIN: 795-300-598
+2024-06-08 21:58:52,006 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\app_II.py', reloading
+2024-06-08 21:58:52,068 INFO: * Restarting with stat
+2024-06-08 21:58:52,850 WARNING: * Debugger is active!
+2024-06-08 21:58:52,850 INFO: * Debugger PIN: 795-300-598
+2024-06-08 21:59:26,201 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\test_app-client.py', reloading
+2024-06-08 21:59:26,280 INFO: * Restarting with stat
+2024-06-08 21:59:27,107 WARNING: * Debugger is active!
+2024-06-08 21:59:27,107 INFO: * Debugger PIN: 795-300-598
+2024-06-08 22:00:13,746 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\test_custom_llm.py', reloading
+2024-06-08 22:00:13,808 INFO: * Restarting with stat
+2024-06-08 22:00:14,757 WARNING: * Debugger is active!
+2024-06-08 22:00:14,757 INFO: * Debugger PIN: 795-300-598
+2024-06-08 22:00:20,359 INFO:Request data: {'messages': [{'role': 'user', 'content': 'Hello, what is the capital city of Germany?'}], 'model': 'gpt-3.5-turbo', 'stream': False}
+2024-06-08 22:00:22,191 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-08 22:00:22,206 INFO:Response data: ChatCompletion(id='chatcmpl-9XwWYhgAkDllafGFFeaDITg8Ujq1n', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='The capital city of Germany is Berlin.', role='assistant', function_call=None, tool_calls=None))], created=1717876818, model='gpt-3.5-turbo-0125', object='chat.completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=8, prompt_tokens=17, total_tokens=25))
+2024-06-08 22:00:22,206 INFO:127.0.0.1 - - [08/Jun/2024 22:00:22] "POST /chat/completions HTTP/1.1" 200 -
+2024-06-08 22:02:10,755 INFO:Request data: {'model': 'gpt-3.5-turbo-0125', 'messages': [{'role': 'system', 'content': 'Ava is a sophisticated AI training assistant, tries to answer user questions.'}, {'role': 'assistant', 'content': 'Hello. This is Iv. How may I assist you today?'}, {'role': 'user', 'content': 'Hello, Eva.'}], 'temperature': 0.7, 'stream': True, 'max_tokens': 250, 'call': {'id': 'f48caf34-4a68-447b-94d0-28eec5aaec84', 'orgId': '84d8c226-08af-4856-b6ed-7c467df319e6', 'createdAt': '2024-06-08T20:01:54.094Z', 'updatedAt': '2024-06-08T20:01:54.094Z', 'type': 'webCall', 'status': 'queued', 'assistant': {'name': 'Ava', 'transcriber': {'provider': 'deepgram', 'model': 'general', 'language': 'en'}, 'model': {'model': 'gpt-3.5-turbo-0125', 'temperature': 0.7, 'messages': [{'content': 'Ava is a sophisticated AI training assistant, tries to answer user questions.', 'role': 'system'}], 'maxTokens': 250, 'provider': 'custom-llm', 'url': 'https://d88a-109-114-23-119.ngrok-free.app'}, 'voice': {'provider': 'deepgram', 'voiceId': 'asteria'}, 'firstMessage': 'Hello, this is Ava. How may I assist you today?', 'voicemailMessage': "You've reached our voicemail. Please leave a message after the beep, and we'll get back to you as soon as possible.", 'endCallMessage': 'Thank you for contacting us. Have a great day!', 'endCallPhrases': ['goodbye'], 'recordingEnabled': True, 'clientMessages': ['transcript', 'hang', 'function-call', 'speech-update', 'metadata', 'conversation-update'], 'serverMessages': ['end-of-call-report', 'status-update', 'hang', 'function-call'], 'parentId': '9b225f0f-ad17-4977-b59a-cf341aba48fa'}, 'webCallUrl': 'https://vapi.daily.co/IZHnOkQDj3VtXpCX4qgD'}, 'metadata': {}}
+2024-06-08 22:02:11,937 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-08 22:02:11,938 INFO:Response data: ChatCompletion(id='chatcmpl-9XwYKnKn4V0QvvzzVJMIzdWtY3txg', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Hello! I'm Ava, not Eva. How can I assist you today?", role='assistant', function_call=None, tool_calls=None))], created=1717876928, model='gpt-3.5-turbo-0125', object='chat.completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=16, prompt_tokens=47, total_tokens=63))
+2024-06-08 22:02:11,939 INFO:127.0.0.1 - - [08/Jun/2024 22:02:11] "POST /chat/completions HTTP/1.1" 200 -
+2024-06-08 22:02:13,532 INFO:Request data: {'model': 'gpt-3.5-turbo-0125', 'messages': [{'role': 'system', 'content': 'Ava is a sophisticated AI training assistant, tries to answer user questions.'}, {'role': 'assistant', 'content': 'Hello. This is Iv. How may I assist you today?'}, {'role': 'user', 'content': 'Hello, Eva. What is the Capital City of France?'}], 'temperature': 0.7, 'stream': True, 'max_tokens': 250, 'call': {'id': 'f48caf34-4a68-447b-94d0-28eec5aaec84', 'orgId': '84d8c226-08af-4856-b6ed-7c467df319e6', 'createdAt': '2024-06-08T20:01:54.094Z', 'updatedAt': '2024-06-08T20:01:54.094Z', 'type': 'webCall', 'status': 'queued', 'assistant': {'name': 'Ava', 'transcriber': {'provider': 'deepgram', 'model': 'general', 'language': 'en'}, 'model': {'model': 'gpt-3.5-turbo-0125', 'temperature': 0.7, 'messages': [{'content': 'Ava is a sophisticated AI training assistant, tries to answer user questions.', 'role': 'system'}], 'maxTokens': 250, 'provider': 'custom-llm', 'url': 'https://d88a-109-114-23-119.ngrok-free.app'}, 'voice': {'provider': 'deepgram', 'voiceId': 'asteria'}, 'firstMessage': 'Hello, this is Ava. How may I assist you today?', 'voicemailMessage': "You've reached our voicemail. Please leave a message after the beep, and we'll get back to you as soon as possible.", 'endCallMessage': 'Thank you for contacting us. Have a great day!', 'endCallPhrases': ['goodbye'], 'recordingEnabled': True, 'clientMessages': ['transcript', 'hang', 'function-call', 'speech-update', 'metadata', 'conversation-update'], 'serverMessages': ['end-of-call-report', 'status-update', 'hang', 'function-call'], 'parentId': '9b225f0f-ad17-4977-b59a-cf341aba48fa'}, 'webCallUrl': 'https://vapi.daily.co/IZHnOkQDj3VtXpCX4qgD'}, 'metadata': {}}
+2024-06-08 22:02:14,325 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-08 22:02:14,326 INFO:Response data: ChatCompletion(id='chatcmpl-9XwYMRi4RM793GcPQ2raqqQm4Di45', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='The capital city of France is Paris.', role='assistant', function_call=None, tool_calls=None))], created=1717876930, model='gpt-3.5-turbo-0125', object='chat.completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=8, prompt_tokens=55, total_tokens=63))
+2024-06-08 22:02:14,326 INFO:127.0.0.1 - - [08/Jun/2024 22:02:14] "POST /chat/completions HTTP/1.1" 200 -
+2024-06-08 22:23:18,487 INFO:Request data: {'model': 'gpt-3.5-turbo-0125', 'messages': [{'role': 'system', 'content': 'Ava is a sophisticated AI training assistant, tries to answer user questions.'}, {'role': 'assistant', 'content': 'Hello. This is Iv. How may I assist you today?'}, {'role': 'user', 'content': 'Hello. Do you know anything about the Cd called the Pay,'}], 'temperature': 0.7, 'stream': True, 'max_tokens': 250, 'call': {'id': 'a27833e2-9194-42ce-ac76-c3505730c167', 'orgId': '84d8c226-08af-4856-b6ed-7c467df319e6', 'createdAt': '2024-06-08T20:22:55.346Z', 'updatedAt': '2024-06-08T20:22:55.346Z', 'type': 'webCall', 'status': 'queued', 'assistant': {'name': 'Ava', 'transcriber': {'provider': 'deepgram', 'model': 'general', 'language': 'en'}, 'model': {'model': 'gpt-3.5-turbo-0125', 'temperature': 0.7, 'messages': [{'content': 'Ava is a sophisticated AI training assistant, tries to answer user questions.', 'role': 'system'}], 'maxTokens': 250, 'provider': 'custom-llm', 'url': 'https://d88a-109-114-23-119.ngrok-free.app'}, 'voice': {'provider': 'deepgram', 'voiceId': 'asteria'}, 'firstMessage': 'Hello, this is Ava. How may I assist you today?', 'voicemailMessage': "You've reached our voicemail. Please leave a message after the beep, and we'll get back to you as soon as possible.", 'endCallMessage': 'Thank you for contacting us. Have a great day!', 'endCallPhrases': ['goodbye'], 'recordingEnabled': True, 'clientMessages': ['transcript', 'hang', 'function-call', 'speech-update', 'metadata', 'conversation-update'], 'serverMessages': ['end-of-call-report', 'status-update', 'hang', 'function-call'], 'parentId': '9b225f0f-ad17-4977-b59a-cf341aba48fa'}, 'webCallUrl': 'https://vapi.daily.co/BBx631IbSqzi6jrQFzXG'}, 'metadata': {}}
+2024-06-08 22:23:19,730 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-08 22:23:19,734 INFO:Response data: ChatCompletion(id='chatcmpl-9Xwslm0KRvHEwD0BehmdA85Jnu9rr', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='I\'m sorry, but I\'m not familiar with a CD called "the Pay." Could you provide more context or details so I can better understand and assist you with your question?', role='assistant', function_call=None, tool_calls=None))], created=1717878195, model='gpt-3.5-turbo-0125', object='chat.completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=36, prompt_tokens=56, total_tokens=92))
+2024-06-08 22:23:19,734 INFO:127.0.0.1 - - [08/Jun/2024 22:23:19] "POST /chat/completions HTTP/1.1" 200 -
+2024-06-08 22:47:49,008 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-08 22:47:49,008 INFO:[33mPress CTRL+C to quit[0m
+2024-06-08 22:47:49,008 INFO: * Restarting with stat
+2024-06-08 22:47:50,074 WARNING: * Debugger is active!
+2024-06-08 22:47:50,074 INFO: * Debugger PIN: 795-300-598
+2024-06-08 22:48:05,984 INFO:Request data: {'messages': [{'role': 'user', 'content': 'Hello, what is the capital city of Germany?'}], 'model': 'gpt-3.5-turbo', 'stream': False}
+2024-06-08 22:48:07,723 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-08 22:48:07,723 INFO:Response data: ChatCompletion(id='chatcmpl-9XxGlK0l38hmqLrLXxnCsko0TMjqy', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='Berlin is the capital city of Germany.', role='assistant', function_call=None, tool_calls=None))], created=1717879683, model='gpt-3.5-turbo-0125', object='chat.completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=8, prompt_tokens=17, total_tokens=25))
+2024-06-08 22:48:07,755 INFO:127.0.0.1 - - [08/Jun/2024 22:48:07] "POST /chat/completions HTTP/1.1" 200 -
+2024-06-08 22:49:51,116 INFO:Request data: {'messages': [{'role': 'user', 'content': 'Hello, what is the capital city of Ethiopia?'}], 'model': 'gpt-3.5-turbo-0125', 'stream': False}
+2024-06-08 22:49:52,714 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-08 22:49:52,714 INFO:Response data: ChatCompletion(id='chatcmpl-9XxIScLzCe5Di3oah65PTILvh5PV3', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='The capital city of Ethiopia is Addis Ababa.', role='assistant', function_call=None, tool_calls=None))], created=1717879788, model='gpt-3.5-turbo-0125', object='chat.completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=11, prompt_tokens=17, total_tokens=28))
+2024-06-08 22:49:52,714 INFO:127.0.0.1 - - [08/Jun/2024 22:49:52] "POST /chat/completions HTTP/1.1" 200 -
+2024-06-08 22:50:07,963 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\test_app.py', reloading
+2024-06-08 22:50:08,082 INFO: * Restarting with stat
+2024-06-08 22:50:09,360 WARNING: * Debugger is active!
+2024-06-08 22:50:09,364 INFO: * Debugger PIN: 795-300-598
+2024-06-08 22:50:19,344 INFO:Request data: {'messages': [{'role': 'user', 'content': 'Hello, what is the capital city of Germany?'}], 'model': 'gpt-3.5-turbo', 'stream': False}
+2024-06-08 22:50:20,378 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-08 22:50:20,378 INFO:Response data: ChatCompletion(id='chatcmpl-9XxIuhhVLP9wEgYKfxY8XVUYQSPab', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='The capital city of Germany is Berlin.', role='assistant', function_call=None, tool_calls=None))], created=1717879816, model='gpt-3.5-turbo-0125', object='chat.completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=8, prompt_tokens=17, total_tokens=25))
+2024-06-08 22:50:20,378 INFO:127.0.0.1 - - [08/Jun/2024 22:50:20] "POST /chat/completions HTTP/1.1" 200 -
+2024-06-08 22:51:08,550 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\custom_llm.py', reloading
+2024-06-08 22:51:08,620 INFO: * Restarting with stat
+2024-06-08 22:51:09,787 WARNING: * Debugger is active!
+2024-06-08 22:51:09,787 INFO: * Debugger PIN: 795-300-598
+2024-06-08 22:54:51,706 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\app-client.py', reloading
+2024-06-08 22:54:51,784 INFO: * Restarting with stat
+2024-06-08 22:54:53,126 WARNING: * Debugger is active!
+2024-06-08 22:54:53,129 INFO: * Debugger PIN: 795-300-598
+2024-06-08 22:54:58,378 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\app-client.py', reloading
+2024-06-08 22:54:58,528 INFO: * Restarting with stat
+2024-06-08 22:54:59,932 WARNING: * Debugger is active!
+2024-06-08 22:54:59,933 INFO: * Debugger PIN: 795-300-598
+2024-06-08 22:55:52,213 INFO:Request data: {'model': 'gpt-3.5-turbo-0125', 'messages': [{'role': 'system', 'content': 'Ava is a sophisticated AI training assistant, tries to answer user questions.'}, {'role': 'assistant', 'content': 'Hello. This is Iv. How may I assist you today?'}, {'role': 'user', 'content': 'Hello.'}], 'temperature': 0.7, 'stream': True, 'max_tokens': 250, 'call': {'id': '04570d82-cf0c-4c9c-8314-1f1c5043e761', 'orgId': '84d8c226-08af-4856-b6ed-7c467df319e6', 'createdAt': '2024-06-08T20:55:36.729Z', 'updatedAt': '2024-06-08T20:55:36.729Z', 'type': 'webCall', 'status': 'queued', 'assistantId': '9b225f0f-ad17-4977-b59a-cf341aba48fa', 'webCallUrl': 'https://vapi.daily.co/zX0x1BzMbzFV1qVhukwe'}, 'metadata': {}}
+2024-06-08 22:55:52,214 INFO:127.0.0.1 - - [08/Jun/2024 22:55:52] "[35m[1mPOST /chat/completions HTTP/1.1[0m" 500 -
+2024-06-08 22:55:53,012 INFO:Request data: {'model': 'gpt-3.5-turbo-0125', 'messages': [{'role': 'system', 'content': 'Ava is a sophisticated AI training assistant, tries to answer user questions.'}, {'role': 'assistant', 'content': 'Hello. This is Iv. How may I assist you today?'}, {'role': 'user', 'content': 'Hello.'}], 'temperature': 0.7, 'stream': True, 'max_tokens': 250, 'call': {'id': '04570d82-cf0c-4c9c-8314-1f1c5043e761', 'orgId': '84d8c226-08af-4856-b6ed-7c467df319e6', 'createdAt': '2024-06-08T20:55:36.729Z', 'updatedAt': '2024-06-08T20:55:36.729Z', 'type': 'webCall', 'status': 'queued', 'assistantId': '9b225f0f-ad17-4977-b59a-cf341aba48fa', 'webCallUrl': 'https://vapi.daily.co/zX0x1BzMbzFV1qVhukwe'}, 'metadata': {}}
+2024-06-08 22:55:53,013 INFO:127.0.0.1 - - [08/Jun/2024 22:55:53] "[35m[1mPOST /chat/completions HTTP/1.1[0m" 500 -
+2024-06-08 22:55:58,800 INFO:Request data: {'model': 'gpt-3.5-turbo-0125', 'messages': [{'role': 'system', 'content': 'Ava is a sophisticated AI training assistant, tries to answer user questions.'}, {'role': 'assistant', 'content': 'Hello. This is Iv. How may I assist you today?'}, {'role': 'user', 'content': 'Hello. The capital City of United Kingdom'}], 'temperature': 0.7, 'stream': True, 'max_tokens': 250, 'call': {'id': '04570d82-cf0c-4c9c-8314-1f1c5043e761', 'orgId': '84d8c226-08af-4856-b6ed-7c467df319e6', 'createdAt': '2024-06-08T20:55:36.729Z', 'updatedAt': '2024-06-08T20:55:36.729Z', 'type': 'webCall', 'status': 'queued', 'assistantId': '9b225f0f-ad17-4977-b59a-cf341aba48fa', 'webCallUrl': 'https://vapi.daily.co/zX0x1BzMbzFV1qVhukwe'}, 'metadata': {}}
+2024-06-08 22:55:58,803 INFO:127.0.0.1 - - [08/Jun/2024 22:55:58] "[35m[1mPOST /chat/completions HTTP/1.1[0m" 500 -
+2024-06-08 22:55:59,691 INFO:Request data: {'model': 'gpt-3.5-turbo-0125', 'messages': [{'role': 'system', 'content': 'Ava is a sophisticated AI training assistant, tries to answer user questions.'}, {'role': 'assistant', 'content': 'Hello. This is Iv. How may I assist you today?'}, {'role': 'user', 'content': 'Hello. The capital City of United Kingdom'}], 'temperature': 0.7, 'stream': True, 'max_tokens': 250, 'call': {'id': '04570d82-cf0c-4c9c-8314-1f1c5043e761', 'orgId': '84d8c226-08af-4856-b6ed-7c467df319e6', 'createdAt': '2024-06-08T20:55:36.729Z', 'updatedAt': '2024-06-08T20:55:36.729Z', 'type': 'webCall', 'status': 'queued', 'assistantId': '9b225f0f-ad17-4977-b59a-cf341aba48fa', 'webCallUrl': 'https://vapi.daily.co/zX0x1BzMbzFV1qVhukwe'}, 'metadata': {}}
+2024-06-08 22:55:59,692 INFO:127.0.0.1 - - [08/Jun/2024 22:55:59] "[35m[1mPOST /chat/completions HTTP/1.1[0m" 500 -
+2024-06-08 22:56:01,372 INFO:Request data: {'model': 'gpt-3.5-turbo-0125', 'messages': [{'role': 'system', 'content': 'Ava is a sophisticated AI training assistant, tries to answer user questions.'}, {'role': 'assistant', 'content': 'Hello. This is Iv. How may I assist you today?'}, {'role': 'user', 'content': 'Hello. The capital City of United Kingdom'}], 'temperature': 0.7, 'stream': True, 'max_tokens': 250, 'call': {'id': '04570d82-cf0c-4c9c-8314-1f1c5043e761', 'orgId': '84d8c226-08af-4856-b6ed-7c467df319e6', 'createdAt': '2024-06-08T20:55:36.729Z', 'updatedAt': '2024-06-08T20:55:36.729Z', 'type': 'webCall', 'status': 'queued', 'assistantId': '9b225f0f-ad17-4977-b59a-cf341aba48fa', 'webCallUrl': 'https://vapi.daily.co/zX0x1BzMbzFV1qVhukwe'}, 'metadata': {}}
+2024-06-08 22:56:01,372 INFO:127.0.0.1 - - [08/Jun/2024 22:56:01] "[35m[1mPOST /chat/completions HTTP/1.1[0m" 500 -
+2024-06-08 23:16:59,411 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\app-client.py', reloading
+2024-06-08 23:16:59,513 INFO: * Restarting with stat
+2024-06-08 23:17:00,791 WARNING: * Debugger is active!
+2024-06-08 23:17:00,793 INFO: * Debugger PIN: 795-300-598
+2024-06-08 23:17:28,715 INFO:Request data: {'model': 'gpt-3.5-turbo-0125', 'messages': [{'role': 'system', 'content': 'Ava is a sophisticated AI training assistant, tries to answer user questions.'}, {'role': 'assistant', 'content': 'Hello. This is Iv. How may I assist you today?'}, {'role': 'user', 'content': 'Hello, Ivan.'}], 'temperature': 0.7, 'stream': True, 'max_tokens': 250, 'call': {'id': '687eea90-888d-46f2-bbbb-1ec90141e93c', 'orgId': '84d8c226-08af-4856-b6ed-7c467df319e6', 'createdAt': '2024-06-08T21:17:12.844Z', 'updatedAt': '2024-06-08T21:17:12.844Z', 'type': 'webCall', 'status': 'queued', 'assistantId': '9b225f0f-ad17-4977-b59a-cf341aba48fa', 'webCallUrl': 'https://vapi.daily.co/p7rOD9Tajeo0JV8mNGpj'}, 'metadata': {}}
+2024-06-08 23:17:28,715 INFO:127.0.0.1 - - [08/Jun/2024 23:17:28] "[35m[1mPOST /chat/completions HTTP/1.1[0m" 501 -
+2024-06-08 23:17:29,531 INFO:Request data: {'model': 'gpt-3.5-turbo-0125', 'messages': [{'role': 'system', 'content': 'Ava is a sophisticated AI training assistant, tries to answer user questions.'}, {'role': 'assistant', 'content': 'Hello. This is Iv. How may I assist you today?'}, {'role': 'user', 'content': 'Hello, Ivan.'}], 'temperature': 0.7, 'stream': True, 'max_tokens': 250, 'call': {'id': '687eea90-888d-46f2-bbbb-1ec90141e93c', 'orgId': '84d8c226-08af-4856-b6ed-7c467df319e6', 'createdAt': '2024-06-08T21:17:12.844Z', 'updatedAt': '2024-06-08T21:17:12.844Z', 'type': 'webCall', 'status': 'queued', 'assistantId': '9b225f0f-ad17-4977-b59a-cf341aba48fa', 'webCallUrl': 'https://vapi.daily.co/p7rOD9Tajeo0JV8mNGpj'}, 'metadata': {}}
+2024-06-08 23:17:29,531 INFO:127.0.0.1 - - [08/Jun/2024 23:17:29] "[35m[1mPOST /chat/completions HTTP/1.1[0m" 501 -
+2024-06-08 23:17:33,622 INFO:Request data: {'model': 'gpt-3.5-turbo-0125', 'messages': [{'role': 'system', 'content': 'Ava is a sophisticated AI training assistant, tries to answer user questions.'}, {'role': 'assistant', 'content': 'Hello. This is Iv. How may I assist you today?'}, {'role': 'user', 'content': 'Hello, Ivan.'}], 'temperature': 0.7, 'stream': True, 'max_tokens': 250, 'call': {'id': '687eea90-888d-46f2-bbbb-1ec90141e93c', 'orgId': '84d8c226-08af-4856-b6ed-7c467df319e6', 'createdAt': '2024-06-08T21:17:12.844Z', 'updatedAt': '2024-06-08T21:17:12.844Z', 'type': 'webCall', 'status': 'queued', 'assistantId': '9b225f0f-ad17-4977-b59a-cf341aba48fa', 'webCallUrl': 'https://vapi.daily.co/p7rOD9Tajeo0JV8mNGpj'}, 'metadata': {}}
+2024-06-08 23:17:33,623 INFO:127.0.0.1 - - [08/Jun/2024 23:17:33] "[35m[1mPOST /chat/completions HTTP/1.1[0m" 501 -
+2024-06-08 23:20:07,595 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\test_app.py', reloading
+2024-06-08 23:20:07,674 INFO: * Restarting with stat
+2024-06-08 23:20:08,886 WARNING: * Debugger is active!
+2024-06-08 23:20:08,886 INFO: * Debugger PIN: 795-300-598
+2024-06-08 23:20:13,435 INFO:Request data: {'messages': [{'role': 'user', 'content': 'Hello, where is Pesaro located in Italy?'}], 'model': 'gpt-3.5-turbo', 'stream': False}
+2024-06-08 23:20:16,378 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-08 23:20:16,394 INFO:Response data: ChatCompletion(id='chatcmpl-9XxlszfiZw6GCn8NhqbWyEv9HE0sW', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='Pesaro is located in the Marche region of Italy, on the Adriatic coast.', role='assistant', function_call=None, tool_calls=None))], created=1717881612, model='gpt-3.5-turbo-0125', object='chat.completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=18, prompt_tokens=17, total_tokens=35))
+2024-06-08 23:20:16,394 INFO:127.0.0.1 - - [08/Jun/2024 23:20:16] "POST /chat/completions HTTP/1.1" 200 -
+2024-06-08 23:21:51,588 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\test_app.py', reloading
+2024-06-08 23:21:51,705 INFO: * Restarting with stat
+2024-06-08 23:21:53,065 WARNING: * Debugger is active!
+2024-06-08 23:21:53,069 INFO: * Debugger PIN: 795-300-598
+2024-06-08 23:21:55,229 INFO: * Detected change in 'D:\\DataScienceAI\\Git\\voicebot\\custom-llm\\app-client.py', reloading
+2024-06-08 23:21:55,307 INFO: * Restarting with stat
+2024-06-08 23:21:56,468 WARNING: * Debugger is active!
+2024-06-08 23:21:56,468 INFO: * Debugger PIN: 795-300-598
