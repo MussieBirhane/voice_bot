@@ -1,19 +1,29 @@
 from flask import Flask, request, Response
 import os
+import openai
 import requests
 import json
 from dotenv import load_dotenv
-from pinecone import Pinecone, PodSpec, ServerlessSpec
 from groq import Groq
+from pinecone import Pinecone, PodSpec, ServerlessSpec
 
 # Load environment variables
 load_dotenv()
 
-# Groq API setup
+# OpenAI setup
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
+# Groq API setup
 client = Groq(
     api_key=os.getenv("GROQ_API_KEY"),
 )
+
+# Instantiate a Pinecone database
+pinecone_mussie_api_key = os.getenv("PINECONE_MUSSIE_API_KEY")
+
+pc_mussie = Pinecone(api_key=pinecone_mussie_api_key)               # Mussie
+index_name_mussie = "kargo-trans-00"
+index_mussie = pc_mussie.Index(index_name_mussie)
 
 app = Flask(__name__)
 
@@ -28,15 +38,31 @@ def chat_completions():
 
     messages = request_data.get('messages', [])  # Assuming 'messages' includes the conversation histor
     model = request_data.get('model')
+    query = messages[-1]['content']
 
-    response_data = client.chat.completions.create(
-            messages=messages,
-            model=model                          # llama3-8b-8192
-            
+
+    # Handle FAQ Using the RAG
+    # Embed the user query
+    res = openai.embeddings.create(input=[query], model="text-embedding-3-small")
+    xq = res.data[0].embedding
+
+    # Retrieve from Pinecone
+    retrieved_data = index_mussie.query(vector=xq, top_k=2, include_metadata=True)
+    print('retrieved data: ', retrieved_data)
+
+    score = retrieved_data["matches"][0]["score"]
+    if score > 0.5:
+        response_data = retrieved_data["matches"][0]["metadata"]["answer"]
+        message = response_data
+    else:
+        # Go get the response from the LLM (Groq)
+        response_data = client.chat.completions.create(
+        messages=messages,
+        model=model                          # llama3-8b-8192
         )
+        message = response_data.choices[0].message.content
 
-    message = response_data.choices[0].message.content
-
+    
     print("AI: ", message)
 
     data_chunks = [{
