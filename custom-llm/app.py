@@ -36,33 +36,36 @@ def chat_completions():
 
     request_data = request.get_json()
 
-    messages = request_data.get('messages', [])  # Assuming 'messages' includes the conversation histor
+    messages = request_data.get('messages', [])  # Assuming 'messages' includes the conversation history
     model = request_data.get('model')
     query = messages[-1]['content']
 
+    try:
+        # Handle FAQ Using the RAG
+        # Embed the user query
+        res = openai.embeddings.create(input=[query], model="text-embedding-3-small")
+        xq = res.data[0].embedding
 
-    # Handle FAQ Using the RAG
-    # Embed the user query
-    res = openai.embeddings.create(input=[query], model="text-embedding-3-small")
-    xq = res.data[0].embedding
+        # Retrieve from Pinecone
+        retrieved_data = index_mussie.query(vector=xq, top_k=2, include_metadata=True)
+        print('retrieved data: ', retrieved_data)
 
-    # Retrieve from Pinecone
-    retrieved_data = index_mussie.query(vector=xq, top_k=2, include_metadata=True)
-    print('retrieved data: ', retrieved_data)
-
-    score = retrieved_data["matches"][0]["score"]
-    if score > 0.5:
-        response_data = retrieved_data["matches"][0]["metadata"]["answer"]
-        message = response_data
-    else:
-        # Go get the response from the LLM (Groq)
-        response_data = client.chat.completions.create(
-        messages=messages,
-        model=model                          # llama3-8b-8192
-        )
-        message = response_data.choices[0].message.content
-
+        score = retrieved_data["matches"][0]["score"]
+        if score > 0.5:
+            response_data = retrieved_data["matches"][0]["metadata"]["answer"]
+            message = response_data
+        else:
+            # Go get the response from the LLM (Groq)
+            response_data = client.chat.completions.create(
+                            messages=messages,
+                            model=model                          # llama3-8b-8192
+            )
+            message = response_data.choices[0].message.content
     
+    except ValueError as e:
+        print("error:", e)
+        message = "It seems I missed part of what you said. Could you kindly repeat it for me?"
+
     print("AI: ", message)
 
     data_chunks = [{
