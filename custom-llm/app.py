@@ -12,11 +12,6 @@ load_dotenv()
 
 # OpenAI setup
 openai.api_key = os.getenv("OPENAI_API_KEY")
- 
-# Groq API setup
-client = Groq(
-    api_key=os.getenv("GROQ_API_KEY"),
-)
 
 # Instantiate a Pinecone database
 pinecone_mussie_api_key = os.getenv("PINECONE_MUSSIE_API_KEY")
@@ -36,9 +31,13 @@ def chat_completions():
 
     request_data = request.get_json()
 
+    print("Request data from Vapi: ", request_data)
+
     messages = request_data.get('messages', [])  # Assuming 'messages' includes the conversation history
     model = request_data.get('model')
     query = messages[-1]['content']
+
+    print("User query: ", query)
 
     try:
         # Handle FAQ Using the RAG
@@ -56,15 +55,15 @@ def chat_completions():
             message = response_data
         else:
             # Go get the response from the LLM (Groq)
-            response_data = client.chat.completions.create(
-                            messages=messages,
-                            model=model                          # llama3-8b-8192
+            response_data = openai.chat.completions.create(
+                            model=model,                          # llama3-8b-8192
+                            messages=messages
             )
             message = response_data.choices[0].message.content
     
     except ValueError as e:
         print("error:", e)
-        message = "It seems I missed part of what you said. Could you kindly repeat it for me?"
+        message = "Кажется, я пропустил часть того, что вы сказали. Не могли бы вы повторить это для меня?"
 
     print("AI: ", message)
 
